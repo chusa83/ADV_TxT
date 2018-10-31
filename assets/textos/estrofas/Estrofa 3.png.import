@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Estrofa 1.png-7c47d9b7a7fe05e0dd0e15e34a5261af.stex"
+path="res://.import/Estrofa 3.png-80056ffefa605068171c4921e75696cb.stex"
 
 [deps]
 
-source_file="res://assets/textos/estrofas/Estrofa 1.png"
-dest_files=[ "res://.import/Estrofa 1.png-7c47d9b7a7fe05e0dd0e15e34a5261af.stex" ]
+source_file="res://assets/textos/estrofas/Estrofa 3.png"
+dest_files=[ "res://.import/Estrofa 3.png-80056ffefa605068171c4921e75696cb.stex" ]
 
 [params]
 
