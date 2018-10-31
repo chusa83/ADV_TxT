@@ -5,6 +5,8 @@ extends Node2D
 # var b = "textvar"
 
 func _ready():
+	#Metodo para lograr cargar vectores de velocidades aleatoreos en
+	#cada uno de los meteoros
 	for i in range(1,8):
 		var meteoro = get_node(str("Meteoro",i))
 		#get_node("Meteoro8").set_linear_velocity()
