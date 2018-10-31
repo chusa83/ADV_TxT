@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/3-4.png-0abd21c81654c4af87a140b41a11e03a.stex"
+path="res://.import/Estrofa 1.png-7c47d9b7a7fe05e0dd0e15e34a5261af.stex"
 
 [deps]
 
-source_file="res://assets/textos/3-4.png"
-dest_files=[ "res://.import/3-4.png-0abd21c81654c4af87a140b41a11e03a.stex" ]
+source_file="res://assets/textos/estrofas/Estrofa 1.png"
+dest_files=[ "res://.import/Estrofa 1.png-7c47d9b7a7fe05e0dd0e15e34a5261af.stex" ]
 
 [params]
 
@@ -16,7 +16,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

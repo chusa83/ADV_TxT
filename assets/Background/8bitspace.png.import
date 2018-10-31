@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/3-4.png-0abd21c81654c4af87a140b41a11e03a.stex"
+path="res://.import/8bitspace.png-6789b1de1f3842892ce559f370a8743f.stex"
 
 [deps]
 
-source_file="res://assets/textos/3-4.png"
-dest_files=[ "res://.import/3-4.png-0abd21c81654c4af87a140b41a11e03a.stex" ]
+source_file="res://assets/Background/8bitspace.png"
+dest_files=[ "res://.import/8bitspace.png-6789b1de1f3842892ce559f370a8743f.stex" ]
 
 [params]
 
