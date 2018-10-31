@@ -10,9 +10,10 @@ func _ready():
 		#get_node("Meteoro8").set_linear_velocity()
 		var vel = Vector2(0,0)
 		randomize()
-		vel.x = randi()%50-50
+		vel.x = rand_range(-50,50)
 		randomize()
-		vel.y = randi()%50-10
+		vel.y = rand_range(-50,50)
+		print(vel)
 		meteoro.set_linear_velocity(vel)
 		
 	# Called when the node is added to the scene for the first time.
