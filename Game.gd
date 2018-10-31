@@ -5,6 +5,16 @@ extends Node2D
 # var b = "textvar"
 
 func _ready():
+	for i in range(1,8):
+		var meteoro = get_node(str("Meteoro",i))
+		#get_node("Meteoro8").set_linear_velocity()
+		var vel = Vector2(0,0)
+		randomize()
+		vel.x = randi()%50-50
+		randomize()
+		vel.y = randi()%50-10
+		meteoro.set_linear_velocity(vel)
+		
 	# Called when the node is added to the scene for the first time.
 	# Initialization here
 	pass
