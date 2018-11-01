@@ -3,11 +3,13 @@ extends Node2D
 # class member variables go here, for example:
 # var a = 2
 # var b = "textvar"
+var cantidadMeteoros = 1;
+# dificultaf = tiempo + velocidadMeteoro
 
 func _ready():
 	#Metodo para lograr cargar vectores de velocidades aleatoreos en
 	#cada uno de los meteoros
-	for i in range(1,8):
+	for i in range(1,cantidadMeteoros):
 		var meteoro = get_node(str("Meteoro",i))
 		#get_node("Meteoro8").set_linear_velocity()
 		var vel = Vector2(0,0)
@@ -15,8 +17,10 @@ func _ready():
 		vel.x = rand_range(-50,50)
 		randomize()
 		vel.y = rand_range(-50,50)
-		print(vel)
 		meteoro.set_linear_velocity(vel)
+		if (i>cantidadMeteoros):
+			meteoro.sleeping= true
+		
 		
 	# Called when the node is added to the scene for the first time.
 	# Initialization here
