@@ -11,7 +11,7 @@
 [ext_resource path="res://Meteoro8.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Meteoro7.tscn" type="PackedScene" id=10]
 
-[node name="Game" type="Node2D" index="0"]
+[node name="Game" type="Node2D"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
