@@ -3,7 +3,7 @@ extends Node2D
 # class member variables go here, for example:
 # var a = 2
 # var b = "textvar"
-var cantidadMeteoros = 1;
+var cantidadMeteoros = 1
 # dificultaf = tiempo + velocidadMeteoro
 export(String) scene_To_Load
 

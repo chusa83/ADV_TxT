@@ -1,7 +1,8 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://assets/Asteroides/Meteoro1.gd" type="Script" id=1]
+[ext_resource path="res://assets/Asteroides/Meteoro.gd" type="Script" id=1]
 [ext_resource path="res://assets/Asteroides/textos/estrofas/Estrofa 4.png" type="Texture" id=2]
+
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -13,7 +14,7 @@ extents = Vector2( 37.4359, 173.475 )
 position = Vector2( 420, 344.8 )
 input_pickable = false
 collision_layer = 1
-collision_mask = 1
+collision_mask = 7
 mode = 0
 mass = 1.0
 friction = 1.0
@@ -30,7 +31,7 @@ linear_damp = -1.0
 angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
-_sections_unfolded = [ "Linear", "Transform" ]
+_sections_unfolded = [ "Collision", "Linear", "Transform" ]
 
 [node name="Estrofa" type="Sprite" parent="." index="0"]
 

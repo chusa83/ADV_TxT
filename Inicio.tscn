@@ -7,7 +7,7 @@
 [ext_resource path="res://assets/Fuentes/5x7_48.tres" type="DynamicFont" id=5]
 [ext_resource path="res://assets/Animations/AnimFadeIn.tres" type="Animation" id=6]
 
-[node name="Inicio" type="Control" index="0"]
+[node name="Inicio" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -81,7 +81,7 @@ align = 1
 valign = 1
 autowrap = true
 clip_text = true
-percent_visible = 1.11111
+percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = 1
 _sections_unfolded = [ "Anchor", "Margin", "Size Flags", "custom_colors", "custom_constants", "custom_fonts" ]
