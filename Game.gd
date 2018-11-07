@@ -5,6 +5,7 @@ extends Node2D
 # var b = "textvar"
 var cantidadMeteoros = 1;
 # dificultaf = tiempo + velocidadMeteoro
+export(String) scene_To_Load
 
 func _ready():
 	#Metodo para lograr cargar vectores de velocidades aleatoreos en

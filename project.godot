@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="TxT_Adv"
-run/main_scene="res://Game.tscn"
+run/main_scene="res://Inicio.tscn"
 config/icon="res://icon.png"
 
 [display]
@@ -23,6 +23,12 @@ window/stretch/mode="2d"
 [editor_plugins]
 
 enabled=PoolStringArray( "codeandweb.texturepacker", "vnen.tiled_importer" )
+
+[physics]
+
+2d/default_gravity_vector=Vector2( 0, 0 )
+2d/default_linear_damp=0.0
+2d/default_angular_damp=0
 
 [rendering]
 
