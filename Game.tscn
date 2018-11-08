@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Game.gd" type="Script" id=1]
 [ext_resource path="res://assets/Background/5IDCYYW.png" type="Texture" id=2]
+[ext_resource path="res://assets/Asteroides/Meteoros/Meteoro1.tscn" type="PackedScene" id=3]
 
 [node name="Game" type="Node2D" index="0"]
 
@@ -17,5 +18,9 @@ _sections_unfolded = [ "Animation", "Offset", "Transform", "Visibility" ]
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="Meteoro1" parent="." index="1" instance=ExtResource( 3 )]
+
+position = Vector2( 176.775, 153.471 )
 
 
