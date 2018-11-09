@@ -19,9 +19,6 @@ func _ready():
 		randomize()
 		vel.y = rand_range(-50,50)
 		meteoro.set_linear_velocity(vel)
-		if (i>cantidadMeteoros):
-			meteoro.sleeping= true
-		
 		
 	# Called when the node is added to the scene for the first time.
 	# Initialization here
