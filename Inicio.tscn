@@ -265,6 +265,6 @@ anims/FadeIn = ExtResource( 6 )
 blend_times = [  ]
 _sections_unfolded = [ "Playback Options" ]
 
-[connection signal="pressed" from="Menu/HBoxContainer/VBoxContainer/BtnInicio" to="." method="_on_BtnInicio_pressed"]
+[connection signal="button_up" from="Menu/HBoxContainer/VBoxContainer/BtnInicio" to="." method="_on_Button_pressed"]
 
 
