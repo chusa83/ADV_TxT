@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://personaje/KinematicBody2D.gd" type="Script" id=1]
+[ext_resource path="res://personaje/player.png" type="Texture" id=2]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = PoolVector2Array( 0, -10, 8.66025, 5, -8.66025, 5 )
+
+[node name="jugador" type="KinematicBody2D" index="0"]
+
+input_pickable = false
+collision_layer = 2
+collision_mask = 3
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision", "Pickable", "collision" ]
+rotation_speed = 1.5
+
+[node name="jugadorSP" type="Sprite" parent="." index="0"]
+
+modulate = Color( 0.613281, 0.19165, 0.19165, 1 )
+self_modulate = Color( 0.824219, 0.199615, 0.199615, 1 )
+rotation = 1.5708
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform", "Visibility" ]
+
+[node name="jugadorCS" type="CollisionShape2D" parent="." index="1"]
+
+position = Vector2( -13, 0 )
+rotation = 1.5708
+scale = Vector2( 3.83859, 5.94114 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+
