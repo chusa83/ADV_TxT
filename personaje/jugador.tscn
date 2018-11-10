@@ -1,14 +1,14 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://personaje/KinematicBody2D.gd" type="Script" id=1]
-[ext_resource path="res://personaje/player.png" type="Texture" id=2]
+[ext_resource path="res://personaje/player(1).png" type="Texture" id=2]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
 points = PoolVector2Array( 0, -10, 8.66025, 5, -8.66025, 5 )
 
-[node name="jugador" type="KinematicBody2D" index="0"]
+[node name="jugador" type="KinematicBody2D"]
 
 input_pickable = false
 collision_layer = 2
