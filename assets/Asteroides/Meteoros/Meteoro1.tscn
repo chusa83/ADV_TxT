@@ -9,9 +9,8 @@ custom_solver_bias = 0.0
 radius = 37.2788
 height = 196.692
 
-[node name="Meteoro1" type="RigidBody2D" index="0"]
+[node name="Meteoro1" type="RigidBody2D"]
 
-editor/display_folded = true
 position = Vector2( 420, 344.8 )
 input_pickable = false
 collision_layer = 1
@@ -33,6 +32,7 @@ angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision", "Linear" ]
+meteoro = null
 
 [node name="Estrofa" type="Sprite" parent="." index="0"]
 

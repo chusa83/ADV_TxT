@@ -15,8 +15,6 @@ rotation_speed = 1.5
 
 [node name="jugadorSP" type="Sprite" parent="." index="0"]
 
-modulate = Color( 0.613281, 0.19165, 0.19165, 1 )
-self_modulate = Color( 0.824219, 0.199615, 0.199615, 1 )
 rotation = 1.5708
 scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 2 )
@@ -25,6 +23,6 @@ _sections_unfolded = [ "Animation", "Offset", "Region", "Transform", "Visibility
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="1"]
 
 build_mode = 0
-polygon = PoolVector2Array( -33.5853, -10.9616, -33.5853, 11.2824, -14.9162, 11.2824, -15.7107, 15.6518, 6.13612, 15.6518, 35.1328, 0.160431, 8.51941, -15.7281, -15.3134, -16.1254, -15.3134, -10.9616 )
+polygon = PoolVector2Array( -33.5853, -10.9616, -33.5853, 11.2824, -15.5427, 11.382, -15.2925, 15.8853, 7.22375, 15.8853, 35, 0, 6.97356, -15.6374, -15.7928, -15.8876, -15.7928, -10.884 )
 
 
