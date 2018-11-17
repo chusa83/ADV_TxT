@@ -1,22 +1,22 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/Asteroides/Meteoro-pedazo.gd" type="Script" id=1]
-[ext_resource path="res://assets/Asteroides/textos/palabras/1-4.png" type="Texture" id=2]
+[ext_resource path="res://assets/Asteroides/textos/palabras/2-1.png" type="Texture" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
 custom_solver_bias = 0.0
 radius = 9.81589
-height = 51.5209
+height = 57.8532
 
-[node name="Pedazo1-4" type="RigidBody2D" index="0"]
+[node name="Pedazo2-1" type="RigidBody2D" index="0"]
 
 position = Vector2( 420, 344.8 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 7
 mode = 0
-mass = 1.0
+mass = 0.8
 friction = 1.0
 bounce = 1.0
 gravity_scale = 0.0
@@ -43,3 +43,5 @@ _sections_unfolded = [ "Offset", "Transform" ]
 rotation = 1.5708
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
+
+

@@ -9,7 +9,7 @@ custom_solver_bias = 0.0
 radius = 9.81589
 height = 69.534
 
-[node name="Pedazo1-1" type="RigidBody2D" index="0"]
+[node name="Pedazo1-3" type="RigidBody2D" index="0"]
 
 position = Vector2( 420, 344.8 )
 input_pickable = false
@@ -43,5 +43,3 @@ _sections_unfolded = [ "Offset", "Transform" ]
 rotation = 1.5708
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
-
-
