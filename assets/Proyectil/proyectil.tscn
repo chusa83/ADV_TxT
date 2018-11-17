@@ -33,11 +33,14 @@ _sections_unfolded = [ "Angular", "Collision", "Linear", "Pause", "Transform" ]
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
+rotation = 1.5708
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
+rotation = 1.5708
 shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
 
 
