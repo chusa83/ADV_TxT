@@ -3,7 +3,6 @@
 [ext_resource path="res://assets/Asteroides/Meteoro.gd" type="Script" id=1]
 [ext_resource path="res://assets/Asteroides/textos/estrofas/Estrofa 8.png" type="Texture" id=2]
 
-
 [node name="Meteoro4" type="RigidBody2D" index="0"]
 
 position = Vector2( 420, 344.8 )
@@ -27,13 +26,14 @@ angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision", "Linear", "Transform" ]
+meteoro = null
 
 [node name="Estrofa" type="Sprite" parent="." index="0"]
 
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Offset", "Transform" ]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="1"]
+[node name="Collision Estrofa" type="CollisionPolygon2D" parent="." index="1"]
 
 build_mode = 0
 polygon = PoolVector2Array( -191.788, -37.6182, -191.788, 20.4237, -247.828, 20.4237, -250, 35.2, 250, 35.2, 249.53, 20.4237, 190.488, 20.4237, 190.488, -37.6182 )

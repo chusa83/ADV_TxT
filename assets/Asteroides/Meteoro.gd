@@ -19,19 +19,21 @@ enum Meteoro {
 
 export(Meteoro) var meteoro = Meteoro.UNO
 
-var radius = get_node("Estrofa").texture.get_width() /2 * get_node("Estrofa").scale
-
+var radius
 
 func _ready():
 	# Called when the node is added to the scene for the first time.
 	# Initialization here
 	connect("explode", self, "_explode")
+	radius = (get_node("Estrofa").texture.get_width() /2) * get_node("Estrofa").scale
 	pass
 
 
 func _explode():
-	
-	queue_free()
+	if meteoro == Meteoro.UNO:
+		var asteroid
+		
+		
 	pass
 
 #func _process(delta):

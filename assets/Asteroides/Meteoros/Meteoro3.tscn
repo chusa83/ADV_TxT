@@ -3,14 +3,13 @@
 [ext_resource path="res://assets/Asteroides/Meteoro.gd" type="Script" id=1]
 [ext_resource path="res://assets/Asteroides/textos/estrofas/Estrofa 3.png" type="Texture" id=2]
 
-
 [sub_resource type="CapsuleShape2D" id=1]
 
 custom_solver_bias = 0.0
 radius = 37.2788
 height = 182.936
 
-[node name="Meteoro3" type="RigidBody2D" index="0"]
+[node name="Meteoro3" type="RigidBody2D"]
 
 position = Vector2( 420, 344.8 )
 input_pickable = false
@@ -33,6 +32,7 @@ angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision", "Linear" ]
+meteoro = null
 
 [node name="Estrofa" type="Sprite" parent="." index="0"]
 

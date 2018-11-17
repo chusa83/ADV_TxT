@@ -31,13 +31,11 @@ position = Vector2( 186.782, 320.591 )
 
 position = Vector2( 523.225, 296.173 )
 mass = 2.0
-meteoro = null
 
 [node name="Meteoro3" parent="." index="3" instance=ExtResource( 5 )]
 
 position = Vector2( 314.074, 192.098 )
 mass = 2.0
-meteoro = null
 
 [node name="jugador" parent="." index="4" instance=ExtResource( 6 )]
 
