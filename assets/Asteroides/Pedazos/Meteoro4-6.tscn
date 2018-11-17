@@ -7,7 +7,7 @@
 
 custom_solver_bias = 0.0
 radius = 9.81589
-height = 47.846
+height = 95.4803
 
 [node name="Pedazo4-6" type="RigidBody2D" index="0"]
 
@@ -43,3 +43,5 @@ _sections_unfolded = [ "Offset", "Transform" ]
 rotation = 1.5708
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
+
+

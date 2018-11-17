@@ -1,16 +1,15 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://personaje/proyectil.gd" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://assets/Proyectil/proyectil.gd" type="Script" id=1]
+[ext_resource path="res://assets/Proyectil/Misil.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 9.15758, 9.29706 )
+extents = Vector2( 3.09449, 12.2319 )
 
 [node name="proyectil" type="RigidBody2D" index="0"]
 
-position = Vector2( 79.9424, -1.43394 )
 input_pickable = false
 collision_layer = 4
 collision_mask = 5
@@ -30,11 +29,10 @@ linear_damp = -1.0
 angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
-_sections_unfolded = [ "Angular", "Collision", "Linear", "Pause" ]
+_sections_unfolded = [ "Angular", "Collision", "Linear", "Pause", "Transform" ]
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
-scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
 
