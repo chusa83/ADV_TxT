@@ -7,7 +7,7 @@
 
 custom_solver_bias = 0.0
 radius = 9.81589
-height = 57.8532
+height = 110.691
 
 [node name="Pedazo3-1" type="RigidBody2D" index="0"]
 
@@ -40,6 +40,9 @@ _sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="Collision Estrofa1" type="CollisionShape2D" parent="." index="1"]
 
+position = Vector2( -1, 1.94707e-07 )
 rotation = 1.5708
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
+
+
