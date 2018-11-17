@@ -4,6 +4,8 @@ export (float) var rotation_speed = 1.5
 
 onready var viewport = get_viewport().get_visible_rect().size
 
+var recarga = 0
+var proyectil = preload("res://personaje/proyectil.tscn")
 var max_limite = 200
 var min_limite = 0
 var aceleracion = 100
@@ -22,7 +24,15 @@ func get_input():
 	if Input.is_action_pressed('ui_up'):
 		velocity.x = aceleracion*cos(rotation)
 		velocity.y = aceleracion*sin(rotation)
-
+	#disparo
+	if Input.is_action_pressed('ui_select'):
+		if recarga <= 0 :
+			var disparo = proyectil.instance()
+			disparo.position = position + Vector2(60,0).rotated(rotation)
+			disparo.rotation = rotation
+			disparo.linear_velocity = Vector2(200,0).rotated(rotation)
+			get_parent().add_child(disparo)
+			recarga = .3
 
 #universo de rosquilla
 func _integrate_forces():
@@ -51,6 +61,6 @@ func _physics_process(delta):
 		speed = max_limite
 	current_velocity = current_velocity.normalized()*speed
 	rotation += rotation_dir * rotation_speed * delta
-	
+	recarga -= delta
 	move_and_slide(current_velocity)
 	_integrate_forces()
