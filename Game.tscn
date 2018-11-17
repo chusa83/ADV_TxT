@@ -5,7 +5,8 @@
 [ext_resource path="res://assets/Asteroides/Meteoros/Meteoro1.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/Asteroides/Meteoros/Meteoro2.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/Asteroides/Meteoros/Meteoro3.tscn" type="PackedScene" id=5]
-[ext_resource path="res://personaje/jugador.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/personaje/jugador.tscn" type="PackedScene" id=6]
+
 
 [node name="Game" type="Node2D" index="0"]
 
