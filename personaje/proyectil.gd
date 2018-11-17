@@ -3,6 +3,9 @@ extends RigidBody2D
 onready var viewport = get_viewport().get_visible_rect().size
 onready var lifetime = 3.0
 
+func _ready():
+	pass
+
 func _integrate_forces(state):
 	var size = $Sprite.texture.get_size() * $Sprite.scale
 	var trans = state.get_transform()

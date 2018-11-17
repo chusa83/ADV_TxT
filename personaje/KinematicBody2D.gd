@@ -62,5 +62,6 @@ func _physics_process(delta):
 	current_velocity = current_velocity.normalized()*speed
 	rotation += rotation_dir * rotation_speed * delta
 	recarga -= delta
+	invulneravilidad -= delta
 	move_and_slide(current_velocity)
 	_integrate_forces()
