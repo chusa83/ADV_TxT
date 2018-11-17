@@ -5,7 +5,7 @@ export (float) var rotation_speed = 1.5
 onready var viewport = get_viewport().get_visible_rect().size
 
 var recarga = 0
-var proyectil = preload("res://personaje/proyectil.tscn")
+var proyectil = preload("res://assets/Proyectil/proyectil.tscn")
 var max_limite = 200
 var min_limite = 0
 var aceleracion = 100
