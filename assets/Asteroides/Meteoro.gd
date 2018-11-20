@@ -22,8 +22,6 @@ func _ready():
 	# Initialization here
 	connect("explode", self, "_explode")
 	radius = (get_node("Estrofa").texture.get_width() /2) * get_node("Estrofa").scale
-
-	
 	pass
 
 

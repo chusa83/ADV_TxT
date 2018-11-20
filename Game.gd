@@ -20,12 +20,12 @@ func _ready():
 		vel.y = rand_range(-50,50)
 		meteoro.set_linear_velocity(vel)
 		
-	$Timer.connect("timeout", self, "destroy_meteoro")
+	#$SceneTreeTimer.connect("timeout", self, "_destroy_meteoro")
 	# Called when the node is added to the scene for the first time.
 	# Initialization here
 	pass
 
-func destroy_meteoro():
+func _destroy_meteoro():
 	randomize()
 	var i = randi()%3
 	var meteoro = get_node("Meteoro"+str(i+1))

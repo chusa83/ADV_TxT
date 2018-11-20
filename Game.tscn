@@ -26,29 +26,19 @@ __meta__ = {
 [node name="Meteoro1" parent="." index="1" instance=ExtResource( 3 )]
 
 position = Vector2( 186.782, 320.591 )
-meteoro = 0
 
 [node name="Meteoro2" parent="." index="2" instance=ExtResource( 4 )]
 
 position = Vector2( 523.225, 296.173 )
 mass = 2.0
-meteoro = 1
 
 [node name="Meteoro3" parent="." index="3" instance=ExtResource( 5 )]
 
 position = Vector2( 314.074, 192.098 )
 mass = 2.0
-meteoro = 2
 
 [node name="jugador" parent="." index="4" instance=ExtResource( 6 )]
 
 position = Vector2( 388.528, 451.807 )
-
-[node name="Timer" type="Timer" parent="." index="5"]
-
-process_mode = 1
-wait_time = 2.0
-one_shot = false
-autostart = true
 
 
