@@ -1,7 +1,7 @@
 extends RigidBody2D
  
 onready var viewport = get_viewport().get_visible_rect().size
-onready var lifetime = 3.0
+onready var lifetime = 1.0
 
 func _ready():
 	pass
