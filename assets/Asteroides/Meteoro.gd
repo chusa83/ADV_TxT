@@ -14,6 +14,7 @@ const CONFIG = {
 }
 
 export(Meteoro) var meteoro = Meteoro.UNO
+export(float) var explode_force = 300
 
 var radius
 
@@ -29,16 +30,13 @@ func _explode():
 
 	var config = CONFIG[meteoro]
 	for i in range(1, config[1] + 1):
+		var offset_dir = PI * 2 / 3 * i
 		var resource = "Meteoro"+str(config[0])+"-"+str(i)+".tscn"
 		var pedazo = load("res://assets/Asteroides/Pedazos/" + resource).instance()
 		print(pedazo)
+		pedazo.position = position + radius.rotated(offset_dir)
+		pedazo.linear_velocity = linear_velocity + Vector2(explode_force, 0).rotated(offset_dir)
 		get_parent().add_child(pedazo)
-
 	queue_free()
+	sleeping = true
 	pass
-
-
-#func _process(delta):
-#	# Called every frame. Delta is time since last frame.
-#	# Update game logic here.
-#	pass
