@@ -29,18 +29,21 @@ __meta__ = {
 
 position = Vector2( 186.782, 320.591 )
 mass = 1.5
+meteoro = 0
 explode_force = 100.0
 
 [node name="Meteoro2" parent="." index="2" instance=ExtResource( 4 )]
 
 position = Vector2( 523.225, 296.173 )
 mass = 1.5
+meteoro = 1
 explode_force = 100.0
 
 [node name="Meteoro3" parent="." index="3" instance=ExtResource( 5 )]
 
 position = Vector2( 314.074, 192.098 )
 mass = 1.5
+meteoro = 2
 explode_force = 100.0
 
 [node name="jugador" parent="." index="4" instance=ExtResource( 6 )]
