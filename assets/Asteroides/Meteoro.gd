@@ -14,7 +14,7 @@ const CONFIG = {
 }
 
 export(Meteoro) var meteoro = Meteoro.UNO
-export(float) var explode_force = 300
+export(float) var explode_force = 100
 
 var radius
 

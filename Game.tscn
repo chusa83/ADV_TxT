@@ -44,7 +44,7 @@ explode_force = 100.0
 position = Vector2( 314.074, 192.098 )
 mass = 1.5
 meteoro = 2
-explode_force = 100.0
+explode_force = 100
 
 [node name="jugador" parent="." index="4" instance=ExtResource( 6 )]
 
