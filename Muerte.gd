@@ -17,7 +17,7 @@ func _ready():
 			get_node("symborska").get_canvas_item().visibility.visible = false
 			get_node("meiradelmar").get_canvas_item().visibility.visible = false
 		2:
-			get_node("haroldoDoCampos").get_canvas_item().visibility.visible = false
+			get_node("haroldoDoCampos").set_canvas_item(visible).= false
 			get_node("neruda").get_canvas_item().visibility.visible = true
 			get_node("symborska").get_canvas_item().visibility.visible = false
 			get_node("meiradelmar").get_canvas_item().visibility.visible = false
