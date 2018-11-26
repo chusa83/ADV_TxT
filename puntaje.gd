@@ -9,11 +9,12 @@ var verso = "Todo canto nuevo/nEs la conquista de otros cantos."
 func _ready():
 	# Called when the node is added to the scene for the first time.
 	# Initialization here
-	connect("punto", self, "_punto")
+	#connect("punto", self, "_punto")
 	_set_score(puntaje)
 	pass
 
 func _set_score(puntaje):
+	print(puntaje)
 	if puntaje != -1:
 		puntajeTexto = str(puntajeTexto + verso[puntaje])
 	text = puntajeTexto
@@ -21,5 +22,6 @@ func _set_score(puntaje):
 
 func _punto():
 	puntaje = puntaje + 1
+	_set_score(puntaje)
 	pass
 

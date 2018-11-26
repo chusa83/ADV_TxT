@@ -22,3 +22,8 @@ func _on_BtnControles_pressed():
 func _on_BtnInicio_pressed():
 	get_tree().change_scene('res://Game.tscn')
 	pass # replace with function body
+
+func _on_BtnCreditos_pressed():
+	get_tree().change_scene('res://Credits.tscn')
+	pass # replace with function body
+
