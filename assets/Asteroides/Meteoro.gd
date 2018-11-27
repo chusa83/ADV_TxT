@@ -10,7 +10,8 @@ enum Meteoro {
 const CONFIG = {
 	Meteoro.UNO: [1, 9],
 	Meteoro.DOS: [2, 9],
-	Meteoro.TRES: [3, 8]
+	Meteoro.TRES: [3, 8],
+	Meteoro.CUATRO: [4, 7]
 }
 
 export(Meteoro) var meteoro = Meteoro.UNO

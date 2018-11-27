@@ -3,7 +3,7 @@ extends Label
 
 export var puntaje = -1 setget _set_score
 var puntajeTexto = "Verso: "
-var verso = "Todo canto nuevo/nEs la conquista de otros cantos."
+var verso = "Todo canto nuevo / Es la conquista de otros cantos."
 
 
 func _ready():
@@ -15,7 +15,7 @@ func _ready():
 
 func _set_score(puntaje):
 	print(puntaje)
-	if puntaje != -1:
+	if puntaje != -1 && verso.length():
 		puntajeTexto = str(puntajeTexto + verso[puntaje])
 	text = puntajeTexto
 	pass
