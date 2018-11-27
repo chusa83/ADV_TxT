@@ -73,6 +73,6 @@ func _physics_process(delta):
 	_integrate_forces()
 	if lives <= 0:
 		queue_free()
-		load ("res://Muerte.tscn")
+		get_tree().change_scene("res://Muerte.tscn")
 
 
