@@ -73,5 +73,6 @@ func _physics_process(delta):
 	_integrate_forces()
 	if lives <= 0:
 		queue_free()
+		load ("res://Muerte.tscn")
 
 
