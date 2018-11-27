@@ -1,24 +1,23 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Game.gd" type="Script" id=1]
-[ext_resource path="res://assets/Background/5IDCYYW.png" type="Texture" id=2]
+[ext_resource path="res://assets/Background/background.png" type="Texture" id=2]
 [ext_resource path="res://assets/Asteroides/Meteoros/Meteoro1.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/Asteroides/Meteoros/Meteoro2.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/Asteroides/Meteoros/Meteoro3.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/personaje/jugador.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/Fuentes/5x7_48.tres" type="DynamicFont" id=7]
 [ext_resource path="res://puntaje.gd" type="Script" id=8]
+[ext_resource path="res://assets/Asteroides/Meteoros/Meteoro4.tscn" type="PackedScene" id=9]
 
-[node name="Game" type="Node2D"]
+[node name="Game" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Background" type="Sprite" parent="." index="0"]
 
-modulate = Color( 0.289062, 0.289062, 0.289062, 1 )
 position = Vector2( 400, 300 )
-scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Animation", "Offset", "Transform", "Visibility" ]
 __meta__ = {
@@ -34,14 +33,14 @@ explode_force = 100.0
 
 [node name="Meteoro2" parent="." index="2" instance=ExtResource( 4 )]
 
-position = Vector2( 523.225, 296.173 )
+position = Vector2( 619.294, 293.171 )
 mass = 1.5
 meteoro = 1
 explode_force = 100.0
 
 [node name="Meteoro3" parent="." index="3" instance=ExtResource( 5 )]
 
-position = Vector2( 314.074, 192.098 )
+position = Vector2( 416.148, 148.066 )
 mass = 1.5
 meteoro = 2
 explode_force = 100
@@ -86,6 +85,7 @@ size_flags_horizontal = 2
 size_flags_vertical = 4
 custom_fonts/font = ExtResource( 7 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 text = "Verso: "
 percent_visible = 1.0
 lines_skipped = 0
@@ -93,5 +93,11 @@ max_lines_visible = -1
 script = ExtResource( 8 )
 _sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Size Flags", "custom_colors", "custom_fonts" ]
 puntaje = -1
+
+[node name="Meteoro4" parent="." index="6" instance=ExtResource( 9 )]
+
+position = Vector2( 640.51, 543.474 )
+meteoro = null
+explode_force = 100
 
 
