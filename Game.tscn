@@ -5,8 +5,8 @@
 [ext_resource path="res://assets/Asteroides/Meteoros/Meteoro1.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/Asteroides/Meteoros/Meteoro2.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/Asteroides/Meteoros/Meteoro3.tscn" type="PackedScene" id=5]
-[ext_resource path="res://assets/personaje/jugador.tscn" type="PackedScene" id=6]
-[ext_resource path="res://assets/Asteroides/Meteoros/Meteoro4.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/Asteroides/Meteoros/Meteoro4.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/personaje/jugador.tscn" type="PackedScene" id=7]
 [ext_resource path="res://assets/Fuentes/5x7_48.tres" type="DynamicFont" id=8]
 [ext_resource path="res://puntaje.gd" type="Script" id=9]
 
@@ -28,6 +28,7 @@ __meta__ = {
 
 position = Vector2( 186.782, 320.591 )
 mass = 1.5
+linear_damp = 0.1
 meteoro = 0
 explode_force = 100.0
 
@@ -35,6 +36,7 @@ explode_force = 100.0
 
 position = Vector2( 619.294, 293.171 )
 mass = 1.5
+linear_damp = 0.1
 meteoro = 1
 explode_force = 100.0
 
@@ -42,18 +44,22 @@ explode_force = 100.0
 
 position = Vector2( 416.148, 148.066 )
 mass = 1.5
+linear_damp = 0.1
 meteoro = 2
 explode_force = 100
 
-[node name="jugador" parent="." index="4" instance=ExtResource( 6 )]
-
-position = Vector2( 388.528, 451.807 )
-
-[node name="Meteoro4" parent="." index="5" instance=ExtResource( 7 )]
+[node name="Meteoro4" parent="." index="4" instance=ExtResource( 6 )]
 
 position = Vector2( 640.51, 543.474 )
+linear_damp = 0.1
 meteoro = 3
 explode_force = 100
+
+[node name="jugador" parent="." index="5" instance=ExtResource( 7 )]
+
+position = Vector2( 388.528, 451.807 )
+rotation = -1.5708
+_sections_unfolded = [ "Collision", "Pickable", "Transform", "collision" ]
 
 [node name="UI" type="Control" parent="." index="6"]
 

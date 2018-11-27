@@ -23,7 +23,7 @@ func _ready():
 	# Called when the node is added to the scene for the first time.
 	# Initialization here
 	connect("explode", self, "_explode")
-	radius = (get_node("Estrofa").texture.get_width() /2) * get_node("Estrofa").scale
+	radius = (get_node("Estrofa").texture.get_height() /2) * get_node("Estrofa").scale
 	pass
 
 
