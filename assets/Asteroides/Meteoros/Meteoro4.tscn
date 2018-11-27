@@ -3,7 +3,6 @@
 [ext_resource path="res://assets/Asteroides/Meteoro.gd" type="Script" id=1]
 [ext_resource path="res://assets/Asteroides/textos/estrofas/Estrofa 4.png" type="Texture" id=2]
 
-
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
@@ -32,6 +31,8 @@ angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision", "Linear", "Transform" ]
+meteoro = 3
+explode_force = 100
 
 [node name="Estrofa" type="Sprite" parent="." index="0"]
 

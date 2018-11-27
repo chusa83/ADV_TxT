@@ -1,14 +1,11 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Game.gd" type="Script" id=1]
 [ext_resource path="res://assets/Background/background.png" type="Texture" id=2]
-[ext_resource path="res://assets/Asteroides/Meteoros/Meteoro1.tscn" type="PackedScene" id=3]
-[ext_resource path="res://assets/Asteroides/Meteoros/Meteoro2.tscn" type="PackedScene" id=4]
-[ext_resource path="res://assets/Asteroides/Meteoros/Meteoro3.tscn" type="PackedScene" id=5]
-[ext_resource path="res://assets/Asteroides/Meteoros/Meteoro4.tscn" type="PackedScene" id=6]
-[ext_resource path="res://assets/personaje/jugador.tscn" type="PackedScene" id=7]
-[ext_resource path="res://assets/Fuentes/5x7_48.tres" type="DynamicFont" id=8]
-[ext_resource path="res://puntaje.gd" type="Script" id=9]
+[ext_resource path="res://assets/personaje/jugador.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/Fuentes/5x7_48.tres" type="DynamicFont" id=4]
+[ext_resource path="res://puntaje.gd" type="Script" id=5]
+[ext_resource path="res://level.gd" type="Script" id=6]
 
 [node name="Game" type="Node2D" index="0"]
 
@@ -24,44 +21,13 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Meteoro1" parent="." index="1" instance=ExtResource( 3 )]
-
-position = Vector2( 186.782, 320.591 )
-mass = 1.5
-linear_damp = 0.1
-meteoro = 0
-explode_force = 100.0
-
-[node name="Meteoro2" parent="." index="2" instance=ExtResource( 4 )]
-
-position = Vector2( 619.294, 293.171 )
-mass = 1.5
-linear_damp = 0.1
-meteoro = 1
-explode_force = 100.0
-
-[node name="Meteoro3" parent="." index="3" instance=ExtResource( 5 )]
-
-position = Vector2( 416.148, 148.066 )
-mass = 1.5
-linear_damp = 0.1
-meteoro = 2
-explode_force = 100
-
-[node name="Meteoro4" parent="." index="4" instance=ExtResource( 6 )]
-
-position = Vector2( 640.51, 543.474 )
-linear_damp = 0.1
-meteoro = 3
-explode_force = 100
-
-[node name="jugador" parent="." index="5" instance=ExtResource( 7 )]
+[node name="jugador" parent="." index="1" instance=ExtResource( 3 )]
 
 position = Vector2( 388.528, 451.807 )
 rotation = -1.5708
 _sections_unfolded = [ "Collision", "Pickable", "Transform", "collision" ]
 
-[node name="UI" type="Control" parent="." index="6"]
+[node name="UI" type="Control" parent="." index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -95,15 +61,24 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 2
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 8 )
+custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 text = "Verso: "
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-script = ExtResource( 9 )
+script = ExtResource( 5 )
 _sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Size Flags", "custom_colors", "custom_fonts" ]
 puntaje = -1
+
+[node name="Level" type="Node2D" parent="." index="3"]
+
+script = ExtResource( 6 )
+level = 0
+meteorospornivel = 1
+saferadius = 200
+maxSpeed = 150
+minSpeed = 50
 
 

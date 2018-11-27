@@ -26,7 +26,8 @@ angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision", "Linear", "Transform" ]
-meteoro = null
+meteoro = 7
+explode_force = 100
 
 [node name="Estrofa" type="Sprite" parent="." index="0"]
 
