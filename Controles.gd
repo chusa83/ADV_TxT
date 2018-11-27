@@ -15,7 +15,6 @@ func _ready():
 #	# Update game logic here.
 #	pass
 
-
-func _on_BtnVolver_button_up():
+func _on_BtnVolver_pressed():
 	get_tree().change_scene('res://Inicio.tscn')
 	pass # replace with function body

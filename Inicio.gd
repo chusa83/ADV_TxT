@@ -27,3 +27,8 @@ func _on_BtnCreditos_pressed():
 	get_tree().change_scene('res://Credits.tscn')
 	pass # replace with function body
 
+
+
+func _on_BtnVolver_pressed():
+	get_tree().change_scene('res://Inicio.tscn')
+	pass # replace with function body

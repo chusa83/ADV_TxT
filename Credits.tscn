@@ -1,11 +1,13 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Inicio.gd" type="Script" id=1]
 [ext_resource path="res://assets/Background/5IDCYYW.png" type="Texture" id=2]
 [ext_resource path="res://assets/Fuentes/5x7.tres" type="DynamicFont" id=3]
-[ext_resource path="res://assets/Animations/AnimFadeIn.tres" type="Animation" id=4]
+[ext_resource path="res://assets/Fuentes/5x7_32.tres" type="DynamicFont" id=4]
+[ext_resource path="res://BtnVolver.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/Animations/AnimFadeIn.tres" type="Animation" id=6]
 
-[node name="Inicio" type="Control"]
+[node name="Inicio" type="Control" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -25,6 +27,7 @@ __meta__ = {
 
 [node name="8bitspace" type="Sprite" parent="." index="0"]
 
+modulate = Color( 0.542969, 0.542969, 0.542969, 1 )
 position = Vector2( 400, 300 )
 scale = Vector2( 0.7, 0.7 )
 texture = ExtResource( 2 )
@@ -35,14 +38,12 @@ __meta__ = {
 
 [node name="Menu" type="VBoxContainer" parent="." index="1"]
 
-anchor_left = 1.0
+anchor_left = 0.5
 anchor_top = 0.0
-anchor_right = 1.0
-anchor_bottom = 0.0
-margin_left = -600.0
-margin_top = 100.0
-margin_right = -200.0
-margin_bottom = 500.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -301.0
+margin_right = 301.0
 rect_min_size = Vector2( 300, 300 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -59,8 +60,8 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 400.0
-margin_bottom = 198.0
+margin_right = 602.0
+margin_bottom = 175.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = true
 mouse_filter = 2
@@ -90,9 +91,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 202.0
-margin_right = 400.0
-margin_bottom = 400.0
+margin_top = 179.0
+margin_right = 602.0
+margin_bottom = 600.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -108,8 +109,8 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 400.0
-margin_bottom = 198.0
+margin_right = 602.0
+margin_bottom = 421.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -125,19 +126,22 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 48.0
-margin_right = 400.0
-margin_bottom = 62.0
+margin_right = 602.0
+margin_bottom = 71.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-text = "Dirección: Alejandro Corredor Parra"
+custom_fonts/font = ExtResource( 4 )
+text = "Dirección:
+Alejandro Corredor"
+align = 1
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
 
 [node name="Label2" type="Label" parent="Menu/HBoxContainer/VBoxContainer" index="1"]
 
@@ -145,19 +149,25 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 66.0
-margin_right = 400.0
-margin_bottom = 80.0
+margin_top = 75.0
+margin_right = 602.0
+margin_bottom = 220.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-text = "Programación: Alejandro Corredor Parra, Nicolás y Agar3s"
+custom_fonts/font = ExtResource( 4 )
+text = "Programación:
+Alejandro Corredor Parra
+Nicolás
+Agar3s"
+align = 1
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
 
 [node name="Label3" type="Label" parent="Menu/HBoxContainer/VBoxContainer" index="2"]
 
@@ -165,22 +175,31 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 84.0
-margin_right = 400.0
-margin_bottom = 149.0
+margin_top = 224.0
+margin_right = 602.0
+margin_bottom = 369.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
+custom_fonts/font = ExtResource( 4 )
 text = "Assets:
 Pen by Filippo Lessio from the Noun Project
 
 "
+align = 1
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="BtnVolver" parent="Menu/HBoxContainer/VBoxContainer" index="3" instance=ExtResource( 5 )]
+
+margin_top = 373.0
+margin_right = 602.0
+margin_bottom = 421.0
 
 [node name="ColorRect" type="ColorRect" parent="." index="2"]
 
@@ -204,8 +223,10 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/FadeIn = ExtResource( 4 )
+anims/FadeIn = ExtResource( 6 )
 blend_times = [  ]
 _sections_unfolded = [ "Playback Options" ]
+
+[connection signal="pressed" from="Menu/HBoxContainer/VBoxContainer/BtnVolver" to="." method="_on_BtnVolver_pressed"]
 
 
