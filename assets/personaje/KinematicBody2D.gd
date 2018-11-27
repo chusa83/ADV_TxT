@@ -12,6 +12,9 @@ var aceleracion = 100
 var velocity = Vector2 (0, 0)
 var current_velocity = Vector2(0,0) 
 var rotation_dir = 0
+var lives = 3
+var invul = 0
+var invul_time = .5
 
 #movimiento
 func get_input():
@@ -48,8 +51,11 @@ func _integrate_forces():
 		trans.origin.y -= viewport.y + size.y
 		
 	set_transform(trans)
-	
 
+func _on_Area2D_body_shape_entered(body_id, body, body_shape, area_shape):
+	if invul <= 0:
+		lives -= 1
+		invul = invul_time
 
 func _physics_process(delta):
 	get_input()
@@ -62,5 +68,10 @@ func _physics_process(delta):
 	current_velocity = current_velocity.normalized()*speed
 	rotation += rotation_dir * rotation_speed * delta
 	recarga -= delta
+	invul -= delta
 	move_and_slide(current_velocity)
 	_integrate_forces()
+	if lives <= 0:
+		queue_free()
+
+

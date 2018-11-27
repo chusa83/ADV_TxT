@@ -7,7 +7,7 @@
 
 input_pickable = false
 collision_layer = 2
-collision_mask = 3
+collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision", "Pickable", "collision" ]
@@ -22,8 +22,31 @@ _sections_unfolded = [ "Animation", "Offset", "Region", "Transform", "Visibility
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="1"]
 
+scale = Vector2( 0.9, 0.9 )
 build_mode = 0
 polygon = PoolVector2Array( -22.2976, -7.38151, -22.2976, 7.87948, -10.289, 7.87948, -10.5392, 10.8816, 4.97198, 10.8816, 22.7348, 1.62497, 22.7348, -0.876831, 4.22144, -10.884, -10.5392, -10.884, -10.5392, -7.38151 )
 _sections_unfolded = [ "Transform" ]
+
+[node name="Area2D" type="Area2D" parent="." index="2"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision_layer = 2
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Collision" ]
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Area2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -22.2976, -7.38151, -22.2976, 7.87948, -10.289, 7.87948, -10.5392, 10.8816, 4.97198, 10.8816, 22.7348, 1.62497, 22.7348, -0.876831, 4.22144, -10.884, -10.5392, -10.884, -10.5392, -7.38151 )
+_sections_unfolded = [ "Transform" ]
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
+
+[connection signal="body_shape_entered" from="Area2D" to="." method="_on_Area2D_body_shape_entered"]
 
 
