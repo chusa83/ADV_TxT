@@ -11,7 +11,11 @@ const CONFIG = {
 	Meteoro.UNO: [1, 9],
 	Meteoro.DOS: [2, 9],
 	Meteoro.TRES: [3, 8],
-	Meteoro.CUATRO: [4, 7]
+	Meteoro.CUATRO: [4, 7],
+	Meteoro.CINCO: [5, 8],
+	Meteoro.SEIS: [6, 4],
+	Meteoro.SIETE: [7, 7],
+	Meteoro.OCHO: [8, 9]
 }
 
 export(Meteoro) var meteoro = Meteoro.UNO
