@@ -9,7 +9,7 @@
 [ext_resource path="res://assets/Fuentes/5x7_48.tres" type="DynamicFont" id=7]
 [ext_resource path="res://puntaje.gd" type="Script" id=8]
 
-[node name="Game" type="Node2D" index="0"]
+[node name="Game" type="Node2D"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
