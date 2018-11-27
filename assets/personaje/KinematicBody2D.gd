@@ -14,7 +14,7 @@ var current_velocity = Vector2(0,0)
 var rotation_dir = 0
 var lives = 3
 var invul = 0
-var invul_time = .5
+var invul_time = .4
 
 #movimiento
 func get_input():
@@ -56,6 +56,11 @@ func _on_Area2D_body_shape_entered(body_id, body, body_shape, area_shape):
 	if invul <= 0:
 		lives -= 1
 		invul = invul_time
+		$Timer.start()
+		$jugadorSP/AnimationPlayer.play("flash")
+		yield($Timer,"timeout")
+		$jugadorSP/AnimationPlayer.stop(true)
+		
 
 func _physics_process(delta):
 	get_input()
@@ -74,5 +79,3 @@ func _physics_process(delta):
 	if lives <= 0:
 		queue_free()
 		get_tree().change_scene("res://Muerte.tscn")
-
-
