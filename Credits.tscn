@@ -1,13 +1,13 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Inicio.gd" type="Script" id=1]
-[ext_resource path="res://assets/Background/5IDCYYW.png" type="Texture" id=2]
+[ext_resource path="res://assets/Background/background.png" type="Texture" id=2]
 [ext_resource path="res://assets/Fuentes/5x7.tres" type="DynamicFont" id=3]
 [ext_resource path="res://assets/Fuentes/5x7_32.tres" type="DynamicFont" id=4]
 [ext_resource path="res://BtnVolver.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/Animations/AnimFadeIn.tres" type="Animation" id=6]
 
-[node name="Inicio" type="Control" index="0"]
+[node name="Inicio" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -29,7 +29,6 @@ __meta__ = {
 
 modulate = Color( 0.542969, 0.542969, 0.542969, 1 )
 position = Vector2( 400, 300 )
-scale = Vector2( 0.7, 0.7 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Offset", "Transform", "Visibility" ]
 __meta__ = {

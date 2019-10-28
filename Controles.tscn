@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Controles.gd" type="Script" id=1]
-[ext_resource path="res://assets/Background/5IDCYYW.png" type="Texture" id=2]
+[ext_resource path="res://assets/Background/background.png" type="Texture" id=2]
 [ext_resource path="res://assets/Fuentes/5x7.tres" type="DynamicFont" id=3]
 [ext_resource path="res://assets/Fuentes/5x7_48.tres" type="DynamicFont" id=4]
 [ext_resource path="res://BtnVolver.tscn" type="PackedScene" id=5]
@@ -28,7 +28,6 @@ __meta__ = {
 [node name="8bitspace" type="Sprite" parent="." index="0"]
 
 position = Vector2( 400, 300 )
-scale = Vector2( 0.7, 0.7 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Offset", "Transform", "Visibility" ]
 __meta__ = {
@@ -60,7 +59,7 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 504.0
-margin_bottom = 165.0
+margin_bottom = 298.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -108,7 +107,6 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = -94.0
 margin_right = 504.0
 margin_bottom = 298.0
 rect_pivot_offset = Vector2( 0, 0 )
@@ -126,9 +124,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 62.0
+margin_top = 15.0
 margin_right = 504.0
-margin_bottom = 113.0
+margin_bottom = 66.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -150,9 +148,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 117.0
+margin_top = 70.0
 margin_right = 504.0
-margin_bottom = 168.0
+margin_bottom = 121.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -174,9 +172,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 172.0
+margin_top = 125.0
 margin_right = 504.0
-margin_bottom = 223.0
+margin_bottom = 176.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -198,9 +196,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 227.0
+margin_top = 180.0
 margin_right = 504.0
-margin_bottom = 278.0
+margin_bottom = 231.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -217,9 +215,9 @@ _sections_unfolded = [ "Size Flags", "custom_fonts" ]
 
 [node name="BtnVolver" parent="Menu/HBoxContainer/VBoxContainer" index="4" instance=ExtResource( 5 )]
 
-margin_top = 282.0
+margin_top = 235.0
 margin_right = 504.0
-margin_bottom = 330.0
+margin_bottom = 283.0
 
 [node name="ColorRect" type="ColorRect" parent="." index="2"]
 
