@@ -1,48 +1,29 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/Asteroides/Meteoro.gd" type="Script" id=1]
 [ext_resource path="res://assets/Asteroides/textos/estrofas/Estrofa 1.png" type="Texture" id=2]
 
-[sub_resource type="CapsuleShape2D" id=1]
+[sub_resource type="PhysicsMaterial" id=2]
+bounce = 1.0
 
-custom_solver_bias = 0.0
+[sub_resource type="CapsuleShape2D" id=1]
 radius = 37.2788
 height = 196.692
 
 [node name="Meteoro1" type="RigidBody2D"]
-
-input_pickable = false
-collision_layer = 1
 collision_mask = 7
-mode = 0
 mass = 2.0
-friction = 1.0
-bounce = 1.0
+physics_material_override = SubResource( 2 )
 gravity_scale = 0.0
-custom_integrator = false
-continuous_cd = 0
-contacts_reported = 0
-contact_monitor = false
-sleeping = false
-can_sleep = true
 linear_velocity = Vector2( -200, 0 )
 linear_damp = 0.0
-angular_velocity = 0.0
-angular_damp = -1.0
 script = ExtResource( 1 )
-_sections_unfolded = [ "Collision", "Linear", "Transform" ]
 meteoro = null
 
-[node name="Estrofa" type="Sprite" parent="." index="0"]
-
+[node name="Estrofa" type="Sprite" parent="."]
 texture = ExtResource( 2 )
-_sections_unfolded = [ "Offset", "Transform" ]
 
-[node name="Collision Estrofa1" type="CollisionShape2D" parent="." index="1"]
-
+[node name="Collision Estrofa1" type="CollisionShape2D" parent="."]
 position = Vector2( -4.30658, 0.78302 )
 rotation = 1.5708
 shape = SubResource( 1 )
-_sections_unfolded = [ "Transform" ]
-
-
